@@ -65,8 +65,15 @@
     justify-content: center;
     vertical-align: middle;
 
+    div.tags {
+      p {
+        line-height:30px
+      }
+    }
+
     p {
-      margin-bottom: 3px;
+      margin-bottom: 5px;
+      margin-top: 5px
       font-size: 1.6rem;
       text-align: inherit;
       font-weight: 300;
