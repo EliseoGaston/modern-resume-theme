@@ -4,8 +4,6 @@
       <h4 id="{{ item.title | slugify }}">{{ item.title }}</h4>
       {%- if item.sub_title -%}<p><b>{{ item.sub_title }}</b></p>{%- endif -%}
       {%- if item.caption -%}<p>{{ item.caption }}</p>{%- endif -%}
-
-      <p>Hola Hola</p>
       
       {{ item.content | strip | markdownify }}
       
