@@ -4,9 +4,10 @@
       <h4 id="{{ item.title | slugify }}">{{ item.title }}</h4>
       {%- if item.sub_title -%}<p><b>{{ item.sub_title }}</b></p>{%- endif -%}
       {%- if item.caption -%}<p>{{ item.caption }}</p>{%- endif -%}
-      
-      {{ item.content | strip | markdownify }}
-      
+
+      <div>
+        {{ item.content | strip | markdownify }}
+      </div>
       <p class="no-print aditional-links">
         {% for link in item.additional_links %}
           {% include a.html href=link.url class="" %}
